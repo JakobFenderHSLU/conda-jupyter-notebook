@@ -32,6 +32,12 @@ conda-jupyter-notebook/
 
 ## Setup Instructions
 
+*Optional:*
+If you use this on a remote workstation, you need to create an ssh tunnel. With the following command:
+```bash
+ssh username@remote-server-address -L 8888:localhost:8888 
+```
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/JakobFenderHSLU/conda-jupyter-notebook
