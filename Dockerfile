@@ -6,10 +6,6 @@ WORKDIR /app
 # Copy environment.yml into the container
 COPY environment.yml .
 
-# Copy notebooks and data directories
-COPY notebooks/ /app/notebooks/
-COPY data/ /app/data/
-
 # Create conda environment
 RUN conda env create -f environment.yml
 

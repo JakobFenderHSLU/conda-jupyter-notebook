@@ -6,7 +6,8 @@ services:
     ports:
       - "8888:8888"
     volumes:
-      - ./data:/data
+      - ./data:/app/data
+      - ./notebooks:/app/notebooks
     deploy:
       resources:
         reservations:
