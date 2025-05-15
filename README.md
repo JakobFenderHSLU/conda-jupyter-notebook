@@ -40,7 +40,7 @@ conda-jupyter-notebook/
 
 2. Build and start the container:
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
 
 3. Access Jupyter Lab:
