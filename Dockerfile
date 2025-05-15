@@ -15,4 +15,4 @@ RUN conda env create -f environment.yml
 
 # Activate environment (must match name in environment.yml)
 # Add conda to PATH, fix token, and launch Jupyter
-CMD ["/bin/bash", "-c", "source activate notebook-env && jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --NotebookApp.token='mytoken' --NotebookApp.allow_origin='*' --NotebookApp.notebook_dir=/app"]
+CMD ["/bin/bash", "-c", "source activate notebook-env && jupyter lab --ip=0.0.0.0 --port=8888 --no-browser --allow-root --ServerApp.token=mytoken --ServerApp.allow_origin='*' --ServerApp.root_dir=/app"]
